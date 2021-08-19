@@ -64,7 +64,6 @@
     }
 
     POSTS.set(posts)
-    console.log('written to store')
 
 </script>
 

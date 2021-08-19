@@ -17,7 +17,6 @@
 
     import TagFilterList from '$lib/TagFilterList.svelte'
 
-    //export let posts
     let posts
     POSTS.subscribe(val => {posts = val})
 
