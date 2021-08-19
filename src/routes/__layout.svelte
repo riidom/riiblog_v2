@@ -35,21 +35,26 @@
             }
         }
     }
+
 </script>
 
 
 
 <script>
+
     import P from '$lib/stores/path'
     import TAGS from '$lib/stores/tags'
+    import POSTS from '$lib/stores/posts'
 
     import Nav from '$lib/Nav.svelte'
     import PostNav from '$lib/PostNav.svelte'
     
     export let posts
+
     posts.de.sort((a, b) => {
         return (new Date(b.metadata.date) - new Date(a.metadata.date))
     })
+
     posts.en.sort((a, b) => {
         return (new Date(b.metadata.date) - new Date(a.metadata.date))
     })
@@ -57,6 +62,10 @@
     for (let i = 0; i < posts.en.length; i++) {
         TAGS.add(posts.en[i].metadata.tags)
     }
+
+    POSTS.set(posts)
+    console.log('written to store')
+
 </script>
 
 
@@ -68,7 +77,8 @@
 
 
 <Nav />
-<PostNav {posts} />
+<!-- <PostNav {posts} /> -->
+<PostNav />
 <main><slot /></main>
 
 

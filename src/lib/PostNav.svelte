@@ -13,10 +13,14 @@
 
     import P from '$lib/stores/path'
     import TAGS from '$lib/stores/tags'
+    import POSTS from '$lib/stores/posts'
 
     import TagFilterList from '$lib/TagFilterList.svelte'
 
-    export let posts
+    //export let posts
+    let posts
+    POSTS.subscribe(val => {posts = val})
+
     let activePosts = []
 
     beforeUpdate( () => {
