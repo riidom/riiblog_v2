@@ -13,10 +13,4 @@ const convertCookie = str => {
 
 
 
-const findCommon = (tagSet, postArray) => {
-
-}
-
-
-
-export { convertCookie, findCommon }
+export { convertCookie }

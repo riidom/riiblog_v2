@@ -12,8 +12,8 @@
     import { convertCookie } from '$lib/util/util'
 
     import P from '$lib/stores/path'
-    import TAGS from '$lib/stores/tags'
     import POSTS from '$lib/stores/posts'
+    import { FILTER } from '$lib/stores/filter'
 
     import TagFilterList from '$lib/TagFilterList.svelte'
 
@@ -25,20 +25,44 @@
     beforeUpdate( () => {
         let LANG = convertCookie(document.cookie)['lang']
         if (!LANG) { LANG = navigator.language.slice(0, 2) }
-        if (LANG !== 'de' && LANG !== 'en') {LANG = 'en'}
-        activePosts = filterPosts(posts[LANG], null)
+        if (LANG !== 'de' && LANG !== 'en') { LANG = 'en' }
+        activePosts = posts[LANG]
     })
 
+    const updatePostList = e => {
+        const filters = FILTER.get()
+
+        for (let p of activePosts) {
+            p.metadata.visible = true
+
+            loop:
+            for (let f in filters) {
+                let fv = filters[f]
+                let postHasTag = p.metadata.tags.includes(f)
+
+                if (fv === 1 && !postHasTag) {
+                    p.metadata.visible = false
+                    break loop
+                }
+                if (fv === -1 && postHasTag) {
+                    p.metadata.visible = false
+                    break loop
+                }
+            }
+        }
+        activePosts = activePosts
+    }
 </script>
 
 
 
 <ul>
-    <li class="entry">
-        <TagFilterList />
+    <li class="entry taglist">
+        <TagFilterList on:filterChanged={updatePostList}/>
     </li>
 
     {#each activePosts as post}
+    {#if post.metadata.visible}
     <li class="entry">
         <a class="post" href={`${$P}/${post.path}`}>{post.metadata.title}</a>
 
@@ -54,6 +78,9 @@
             <img src={`${$P}/thumbs/${post.metadata.id}-THUMB.jpg`} alt="">
         </a>
     </li>
+    {:else}
+    <p class="unavailable">{post.metadata.title}</p>
+    {/if}
     {/each}
 </ul>
 
@@ -63,35 +90,60 @@
     ul {
         grid-area: sb;
         background: #0001;
+        max-width: 100%;
         margin: 0;
-        padding: 1rem;
+        padding: .5rem;
+        overflow: auto;
+        overflow-y: scroll;
+        direction: rtl;
     }
+
    .entry {
         margin-bottom: 1rem;
         list-style: none;
-        width: fit-content;
         padding: 0 1rem .5rem;
         border-bottom: 1px solid #0004;
+        direction: ltr;
     }
+    .entry.taglist {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .post {
         display: block;
         margin-bottom: .25rem;
     }
+
     pre {
         margin: 0 0 .25rem;
         color: #000a;
         font-size: 0.75rem;
     }
+
     .tags {
         display: flex;
-        gap: .5rem;
+        gap: .25rem;
         margin: 0 0 .5rem;
     }
+
     .tags span {
-        background: #fff4;
-        border: 1px solid #0004;
-        padding: .2rem .5rem .15rem .25rem;
+        background: #fff2;
+        border: 1px solid #0002;
+        padding: .1rem .25rem .1rem .15rem;
         border-radius: 6px;
+        font-size: .8rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .unavailable {
+        font-style: italic;
+        color: #0008;
+        text-align: left;
+        margin: .25rem 0;
         font-size: .8rem;
     }
 

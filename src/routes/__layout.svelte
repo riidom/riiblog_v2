@@ -7,6 +7,7 @@
         listDe.push(
             allDePosts[path]().then(mod => {
                 let metadata = mod.metadata
+                metadata.visible = true
                 path = path.slice(0, -3)
                 return {path, metadata}
             })
@@ -19,6 +20,7 @@
         listEn.push(
             allEnPosts[path]().then(mod => {
                 let metadata = mod.metadata
+                metadata.visible = true
                 path = path.slice(0, -3)
                 return {path, metadata}
             })
@@ -78,7 +80,11 @@
 <Nav />
 <!-- <PostNav {posts} /> -->
 <PostNav />
-<main><slot /></main>
+<main>
+    <div class="wrapper">
+        <slot />
+    </div>
+</main>
 
 
 
@@ -86,19 +92,24 @@
 
     :global(body) {
         background: black;
+        margin: 0;
+        padding: 0;
     }
 
     :global(#svelte) {
+        box-sizing: border-box;
+        height: 100vh;
         background: #ddd;
         display: grid;
         grid-template-areas: "hd hd" "mn sb";
         grid-auto-columns: 3fr 1fr;
-        gap: 1rem;
+        gap: .25rem;
     }
 
     main {
         grid-area: mn;
         padding: 0 0 0 1rem;
+        overflow-y: scroll;
     }
 
 </style>
