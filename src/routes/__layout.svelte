@@ -108,7 +108,7 @@
 
     main {
         grid-area: mn;
-        padding: 0 0 0 1rem;
+        padding: 0 1rem;
         overflow-y: scroll;
     }
 
