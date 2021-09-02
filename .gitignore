@@ -6,6 +6,7 @@ node_modules
 /blog
 .directory
 *.jpg
+!screenshot.jpg
 *.png
 *.svg
 index.svelte
