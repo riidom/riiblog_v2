@@ -48,7 +48,6 @@
     import TAGS from '$lib/stores/tags'
     import POSTS from '$lib/stores/posts'
 
-    import Nav from '$lib/Nav.svelte'
     import PostNav from '$lib/PostNav.svelte'
     
     export let posts
@@ -82,9 +81,8 @@
 
 
 
-<Nav />
-<!-- <PostNav {posts} /> -->
 <PostNav />
+
 <main>
     <div class="wrapper">
         <slot />
@@ -106,7 +104,7 @@
         height: 100vh;
         background: #ddd;
         display: grid;
-        grid-template-areas: "hd hd" "mn sb";
+        grid-template-areas: "mn sb";
         grid-auto-columns: 3fr 1fr;
         gap: .25rem;
     }
