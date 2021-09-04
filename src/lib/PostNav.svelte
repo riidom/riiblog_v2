@@ -64,19 +64,23 @@
     {#each activePosts as post}
     {#if post.metadata.visible}
     <li class="entry">
-        <a class="post" href={`${$P}/${post.path}`}>{post.metadata.title}</a>
 
-        <pre>{new Date(post.metadata.date).toLocaleDateString()}</pre>
+        {#if !post.metadata.tags.includes('meta')}
+            <a class="post" href={`${$P}/${post.path}`}>{post.metadata.title}</a>
+            
+            <pre>{new Date(post.metadata.date).toLocaleDateString()}</pre>
 
-        <p class="tags">
-            {#each post.metadata.tags as tag}
-                <span>#{tag}</span>
-            {/each}
-        </p>
+            <p class="tags">
+                {#each post.metadata.tags as tag}
+                    <span>#{tag}</span>
+                {/each}
+            </p>
+        {/if}
 
         <a class="post" href={`${$P}/${post.path}`}>
             <img src={`${$P}/thumbs/${post.metadata.id}-THUMB.jpg`} alt="">
         </a>
+
     </li>
     {:else}
     <p class="unavailable">{post.metadata.title}</p>

@@ -65,6 +65,11 @@
         TAGS.add(posts.en[i].metadata.tags)
     }
 
+    for (let l of ['en', 'de']) {
+        let about = posts[l].pop()
+        posts[l].unshift(about)
+    }
+   
     POSTS.set(posts)
 
 </script>
