@@ -38,6 +38,7 @@
         margin-inline-start: 0.5rem;
         margin-inline-end: 0.5rem;
         margin-block-end: 2rem;
+        min-height: 12rem;
     }
 
     figcaption {
