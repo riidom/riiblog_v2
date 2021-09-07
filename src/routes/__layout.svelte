@@ -101,18 +101,52 @@
 
     :global(#svelte) {
         box-sizing: border-box;
-        height: 100vh;
         background: #ddd;
-        display: grid;
-        grid-template-areas: "mn sb";
-        grid-auto-columns: 3fr 1fr;
-        gap: .25rem;
     }
 
     main {
-        grid-area: mn;
-        padding: 0 1rem;
-        overflow-y: scroll;
+        padding-left: max(1rem, calc((100% - 70ch) / 2));
+        padding-right: max(1rem, calc((100% - 70ch) / 2));
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+
+
+    @media only screen and (min-width: 40rem) {
+
+        :global(#svelte) {
+            display: grid;
+            grid-template-areas: "mn sb";
+            grid-auto-columns: 2fr 1fr;
+            gap: .25rem;
+            height: 100vh;
+        }
+
+        main {
+            grid-area: mn;
+            overflow-y: scroll;
+        }
+
+    }
+
+
+
+    @media only screen and (min-width: 50rem) {
+
+        :global(#svelte) {
+            grid-auto-columns: 2.5fr 1fr;
+        }
+    }
+
+
+
+    @media only screen and (min-width: 80rem) {
+
+        :global(#svelte) {
+            grid-auto-columns: 4fr 1fr;
+        }
+
     }
 
 </style>

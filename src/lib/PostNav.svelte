@@ -18,9 +18,12 @@
     import TagFilterList from '$lib/TagFilterList.svelte'
 
     let posts
+    let activePosts = []
+    let hideMenu = true
+
     POSTS.subscribe(val => {posts = val})
 
-    let activePosts = []
+
 
     beforeUpdate( () => {
         let LANG = convertCookie(document.cookie)['lang']
@@ -52,11 +55,14 @@
         }
         activePosts = activePosts
     }
+
+    const toggleOnMobile = () => hideMenu = !hideMenu
 </script>
 
 
 
-<ul>
+<ul class:hideMenu>
+
     <li class="entry taglist">
         <TagFilterList on:filterChanged={updatePostList}/>
     </li>
@@ -66,7 +72,9 @@
     <li class="entry">
 
         {#if !post.metadata.tags.includes('meta')}
-            <a class="post" href={`${$P}/${post.path}`}>{post.metadata.title}</a>
+            <a class="post" href={`${$P}/${post.path}`}>
+                {post.metadata.title}
+            </a>
             
             <pre>{new Date(post.metadata.date).toLocaleDateString()}</pre>
 
@@ -86,20 +94,40 @@
     <p class="unavailable">{post.metadata.title}</p>
     {/if}
     {/each}
+
 </ul>
+
+<button class="hamburger" on:click={toggleOnMobile}>
+    &equiv;
+</button>
+
+<div class="background" class:hideMenu></div>
 
 
 
 <style>
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ddd;
+        z-index: 0;
+    }
+
     ul {
-        grid-area: sb;
-        background: #0001;
-        max-width: 100%;
+        background: #ddd;
+        max-width: min(23rem, 100%);
         margin: 0;
         padding: .5rem;
         overflow: auto;
-        overflow-y: scroll;
         direction: rtl;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
     }
 
    .entry {
@@ -109,9 +137,9 @@
         border-bottom: 1px solid #0004;
         direction: ltr;
     }
+
     .entry.taglist {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 1rem 0;
     }
 
     .post {
@@ -140,7 +168,7 @@
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .unavailable {
@@ -150,5 +178,41 @@
         margin: .25rem 0;
         font-size: .8rem;
     }
+
+    .hamburger {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1;
+    }
+
+    .hideMenu {
+        display: none;
+    }
+
+
+
+    @media only screen and (min-width: 40rem) {
+
+        .background {
+            display: none;
+        }
+
+        ul {
+            position: static;
+            grid-area: sb;
+            overflow-y: scroll;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        ul.hideMenu {
+            display: block;
+        }
+    }
+
+    
 
 </style>

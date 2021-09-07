@@ -38,13 +38,31 @@
 
 
 <style>
+
     button {
-        display: inline;
-        border: none;
+        border: 1px solid black;
+        border-radius: 6px;
         outline: none;
         cursor: pointer;
         margin: 0;
-        padding: .25rem 1rem;
-        background: none;
+        padding: .125rem .25rem;
+        background: #eee;
+        font-size: .8rem;
+    }
+
+    button:hover, button:focus {
+        border-color: #333;
+        background: #fff;
+    }
+
+
+
+    @media only screen and (min-width: 46rem) {
+
+        button {
+            font-size: 1rem;
+            padding: .25rem .5rem;
+        }
+
     }
 </style>

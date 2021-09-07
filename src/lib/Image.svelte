@@ -33,8 +33,20 @@
 
 
 <style>
+
+    figure {
+        margin-inline-start: 0.5rem;
+        margin-inline-end: 0.5rem;
+    }
+
+    figcaption {
+        font-size: .8rem;
+        font-style: italic;
+    }
+
     img.thumb {
         cursor: zoom-in;
+        max-width: 100%;
     }
 
     .modal-bg {

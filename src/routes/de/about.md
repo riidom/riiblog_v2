@@ -17,8 +17,6 @@ tags:
 
 <PostHeader {title} {date} {tags} />
 
----
-
 ### Was ist das für eine Seite?
 
 Hauptsächlich ein Selbst­motivations­projekt. Ausserdem bastele ich gerne Webseiten. Konkret schreibe ich hier über Fort­schritte, Rück­schläge und Experimente bei meinen Hobby­projekten.

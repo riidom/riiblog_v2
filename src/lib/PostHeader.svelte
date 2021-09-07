@@ -32,7 +32,7 @@
 <div class="meta">
 
     {#if date}
-        <p>{date}</p>
+        <pre class="date">{date}</pre>
     {/if}
 
     {#if tags}
@@ -47,12 +47,56 @@
 
 </div>
 
+<hr>
+
 
 
 <style>
+
     .meta {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: .5rem;
+        width: 100%;
     }
+
+    pre {
+        color: #000a;
+    }
+
+    .tag {
+        background: #fff2;
+        border: 1px solid #0002;
+        padding: .1rem .25rem .1rem .15rem;
+        border-radius: 6px;
+    }
+
+    .date, .tag {
+        font-size: .8rem;
+        margin: 0;
+    }
+
+    hr {
+        margin: 1rem 0 2rem;
+    }
+
+
+
+    @media only screen and (min-width: 40rem) {
+
+        .meta {
+            gap: 1rem;
+        }
+
+        .date, .tag  {
+            font-size: 1rem;
+        }
+
+        hr {
+           margin: 2rem 0 4rem;
+        }
+
+    }
+    
 </style>

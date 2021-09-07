@@ -17,8 +17,6 @@ tags:
 
 <PostHeader {title} {date} {tags} />
 
----
-
 ### What is this site about?
 
 It is mostly a self motivation project. Also I like whipping up my own website. Here I am writing about progresses, setbacks and experiments on various ongoing projects.
