@@ -18,7 +18,7 @@
 </script>
 
 
-
+<p class="info">Filter:</p>
 <ul class="tags-list">
 {#each allTags as tag}
     <li class="{tag}">
@@ -46,6 +46,13 @@
 
 
 <style>
+
+    .info {
+        text-align: left;
+        padding: 0 0 .5rem 0;
+        margin: 0;
+    }
+
     .tags-list {
         display: flex;
         gap: .25rem;

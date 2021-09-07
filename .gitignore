@@ -10,3 +10,4 @@ node_modules
 *.png
 *.svg
 index.svelte
+/temp
