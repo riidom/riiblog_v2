@@ -61,6 +61,7 @@
         top: 0;
         left: 0;
         cursor: zoom-out;
+        z-index: 3;
     }
 
     .modal-bg.active {
