@@ -19,7 +19,7 @@
 
     let posts
     let activePosts = []
-    let hideMenu = true
+    $: hideMenu = true
 
     POSTS.subscribe(val => {posts = val})
 
@@ -72,7 +72,7 @@
     <li class="entry">
 
         {#if !post.metadata.tags.includes('meta')}
-            <a class="post" href={`${$P}/${post.path}`}>
+            <a class="post" href={`${$P}/${post.path}`} on:click={toggleOnMobile}>
                 {post.metadata.title}
             </a>
             
@@ -85,7 +85,7 @@
             </p>
         {/if}
 
-        <a class="post" href={`${$P}/${post.path}`}>
+        <a class="post" href={`${$P}/${post.path}`} on:click={toggleOnMobile}>
             <img src={`${$P}/thumbs/${post.metadata.id}-THUMB.jpg`} alt="">
         </a>
 
