@@ -98,7 +98,7 @@
 </ul>
 
 <button class="hamburger" on:click={toggleOnMobile}>
-    &equiv;
+    <div></div><div></div><div></div>
 </button>
 
 <div class="background" class:hideMenu></div>
@@ -113,12 +113,12 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #ddd;
+        background-color: var(--bg);
         z-index: 0;
     }
 
     ul {
-        background: #ddd;
+        background: var(--bg);
         max-width: min(23rem, 100%);
         margin: 0;
         padding: .5rem;
@@ -134,7 +134,7 @@
         margin-bottom: 1rem;
         list-style: none;
         padding: 0 1rem .5rem;
-        border-bottom: 1px solid #0004;
+        border-bottom: 1px solid var(--hr);
         direction: ltr;
     }
 
@@ -149,7 +149,7 @@
 
     pre {
         margin: 0 0 .25rem;
-        color: #000a;
+        color: var(--pre);
         font-size: 0.75rem;
     }
 
@@ -160,20 +160,26 @@
     }
 
     .tags span {
-        background: #fff2;
-        border: 1px solid #0002;
+        background: var(--tag-bg);
+        border: 1px solid var(--tag-border);
         padding: .1rem .25rem .1rem .15rem;
         border-radius: 6px;
         font-size: .8rem;
+        color: var(--tag-text);
     }
 
     img {
         max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    img:hover {
+        filter: brightness(125%) drop-shadow(0 0 4px var(--img-hover));
     }
 
     .unavailable {
         font-style: italic;
-        color: #0008;
+        color: var(--unavailable);
         text-align: left;
         margin: .25rem 0;
         font-size: .8rem;
@@ -184,13 +190,59 @@
         top: 1rem;
         right: 1rem;
         z-index: 1;
+        padding: .25rem .75rem;
+        background-color: var(--btt-bg);
+        border: 1px solid var(--btt-border);
+        border-radius: 6px;
+        box-shadow: 0 0 5px 3px var(--bg);
+    }
+
+    .hamburger div {
+        width: 2rem;
+        height: .25rem;
+        background: var(--text);
+        margin: .5rem 0;
+        border-radius: .15rem;
+    }
+
+    .hamburger:hover,
+    .hamburger:focus {
+        border-color: var(--btt-hover-border);
+        box-shadow: 0 0 5px 3px var(--btt-hover-bg);
+    }
+
+    .hamburger:hover div,
+    .hamburger:focus div {
+        background-color: var(--a);
     }
 
     .hideMenu {
         display: none;
     }
 
+    ::-webkit-scrollbar {
+        width: .5rem;
+    }
 
+    ::-webkit-scrollbar-track {
+        background: linear-gradient(0deg, 
+            #6444 0%,
+            #644 10%,
+            #644 90%,
+            #6444 100%
+        );
+        border-radius: .25rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(0deg, 
+            #a99a 0%,
+            #a994 10%,
+            #a994 90%,
+            #a99a 100%
+        );
+        border-radius: .25rem;
+    }
 
     @media only screen and (min-width: 40rem) {
 

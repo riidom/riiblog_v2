@@ -40,19 +40,20 @@
 <style>
 
     button {
-        border: 1px solid black;
+        border: 1px solid var(--btt-border);
         border-radius: 6px;
         outline: none;
         cursor: pointer;
         margin: 0;
         padding: .125rem .25rem;
-        background: #eee;
+        background: var(--btt-bg);
         font-size: .8rem;
+        color: var(--a)
     }
 
     button:hover, button:focus {
-        border-color: #333;
-        background: #fff;
+        border-color: var(--btt-hover-border);
+        background: var(--btt-hover-bg);
     }
 
 

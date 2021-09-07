@@ -37,11 +37,13 @@
     figure {
         margin-inline-start: 0.5rem;
         margin-inline-end: 0.5rem;
+        margin-block-end: 2rem;
     }
 
     figcaption {
         font-size: .8rem;
         font-style: italic;
+        max-width: 500px; /* max. Breite des Thumbnails (500x200px) */
     }
 
     img.thumb {
@@ -70,4 +72,12 @@
         max-width: 100vw;
         max-height: 100vh;
     }
+
+    @media only screen and (min-width: 60rem) {
+        figure {
+            margin-inline-start: 2rem;
+            margin-inline-end: 2rem;
+        }
+    }
+
 </style>

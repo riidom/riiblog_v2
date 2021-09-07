@@ -57,8 +57,8 @@
     li {
         display: flex;
         gap: 0;
-        background: #fff4;
-        border: 1px solid #0004;
+        background: var(--tf-bg);
+        border: 1px solid var(--tf-border);
         border-radius: 6px;
         align-items: center;
     }
@@ -76,38 +76,41 @@
     button.tag {
         margin: 0;
         font-size: 0.75rem;
-        color: #009;
+        color: var(--tf-tag);
     }
 
     button.yes {
-        color: #060;
+        color: var(--tf-yes);
         border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;}
+        border-bottom-left-radius: 6px;
+    }
 
     button.no {
-        color: #600;
+        color: var(--tf-no);
         border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;    }
+        border-bottom-right-radius: 6px;
+    }
 
     .yes:hover, .yes:focus {
-        background: #0602;
+        background: var(--tf-yes-hover-bg);
     }
 
     .yes.active {
-        background: #060;
-        color: #eee;
+        background: var(--tf-yes-active-bg);
+        color: var(--tf-active);
     }
 
     .tag:hover, .tag:focus {
-        background: #1111;
+        background: var(--tf-tag-hover-bg);
     }
 
     .no:hover, .no:focus {
-        background: #6002;
+        background: var(--tf-no-hover-bg);
     }
 
     .no.active {
-        background: #600;
-        color: #eee;
+        background: var(--tf-no-active-bg);
+        color: var(--tf-active);
     }
+    
 </style>

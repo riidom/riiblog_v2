@@ -26,7 +26,6 @@
 
 
 
-
 <h1>{title}</h1>
 
 <div class="meta">
@@ -62,14 +61,15 @@
     }
 
     pre {
-        color: #000a;
+        color: var(--pre);
     }
 
     .tag {
-        background: #fff2;
-        border: 1px solid #0002;
+        background: var(--tag-bg);
+        border: 1px solid var(--tag-border);
         padding: .1rem .25rem .1rem .15rem;
         border-radius: 6px;
+        color: var(--tag-text);
     }
 
     .date, .tag {
