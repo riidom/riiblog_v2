@@ -1,3 +1,3 @@
 # current state
 
-![unfinished](screnshot.jpg)
+![unfinished](screenshot.jpg)
