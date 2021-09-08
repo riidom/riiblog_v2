@@ -17,16 +17,27 @@ tags:
 
 <PostHeader {title} {date} {tags} />
 
-### What is this site about?
+## What is this site about?
 
 It is mostly a self motivation project. Also I like whipping up my own website. Here I am writing about progresses, setbacks and experiments on various ongoing projects.
 
-
-### What projects?
+## What projects?
 
 Mostly it's about 3D, game development, website development, animations, writing and text adventures (or interactive fiction).
 
-### Anything else?
+Some of the tags are not self-explanatory, so let's collect all this here:
+
+### SF2020
+
+An animation project. Topic is "space opera" in the broadest sense, the whole thing being in lowpoly style. At first a lots of stuff needs to be modelled, followed by characters, then some animation tests, and then some story and plot. Ideally I have some episodes of probably a few minutes length to present in the end.
+
+### Weekend Challenge
+
+A weekly contest hosted at the forum <a href="https://blenderartists.org/c/contests/weekend-challenge/25" target="_blank" rel="noopener noreferrer">blenderartists.org</a>. Nothing to win, the competition is mostly fierce (not me though)!
+
+---
+
+## Anything else?
 
 This a purely private, static website. Commenting is not possible, third party content is not embedded *(but may be linked, for example when I upload something to youtube or elsewhere)*.
 
@@ -60,4 +71,5 @@ Media from different domains will be only linked, but not embedded. This applies
 
 ## Contact
 Necessary information for a private site with non-journalistic content without advertisement or commercial intent *(notice the spam protection!)*:
+
 **dominik@** *thisDomain*

@@ -17,15 +17,27 @@ tags:
 
 <PostHeader {title} {date} {tags} />
 
-### Was ist das für eine Seite?
+## Was ist das für eine Seite?
 
 Hauptsächlich ein Selbst­motivations­projekt. Ausserdem bastele ich gerne Webseiten. Konkret schreibe ich hier über Fort­schritte, Rück­schläge und Experimente bei meinen Hobby­projekten.
 
-### Und was für Projekte?
+## Und was für Projekte?
 
 Meist geht es um 3D, Spieleentwicklung, Webseitenprogrammierung, Animationen, Schreiben oder Textabenteuer/interaktive Fiktion.
 
-### Sonst noch was?
+Manche der Tags sind nicht unbedingt selbsterklärend, also sammeln wir die Erläuterungen hier:
+
+### SF2020
+
+Ein Animationsprojekt. Thema ist im weitesten Sinne "Space Opera", das ganze wird im Lowpoly-Stil gehalten. Zunächst mal müssen ein Haufen Dinge modelliert werden, dann Charaktere, dann folgen ein paar Animationstests, dann wird es Zeit für eine Handlung, und im Idealfall folgen dann Episoden von vermutlich wenigen Minuten Länge.
+
+### Weekend Challenge
+
+Ein wöchentlicher Wettbewerb, der im Forum <a href="https://blenderartists.org/c/contests/weekend-challenge/25" target="_blank" rel="noopener noreferrer">blenderartists.org</a> abgehalten wird. Zu gewinnen gibt es nichts, die Konkurrenz ist größtenteils furchterregend gut (trifft auf mich nicht zu)!
+
+---
+
+## Sonst noch was?
 
 Das ist eine rein private, statische Seite. Kommentare sind leider nicht möglich, Drittanbieterinhalte werden nicht eingebettet *(aber ggf. verlinkt, zum Beispiel wenn ich mal etwas bei Youtube oder woanders hochlade)*.
 
