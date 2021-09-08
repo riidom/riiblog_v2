@@ -155,6 +155,7 @@
 
     .tags {
         display: flex;
+        flex-wrap: wrap;
         gap: .25rem;
         margin: 0 0 .5rem;
     }
