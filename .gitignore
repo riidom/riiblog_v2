@@ -9,5 +9,6 @@ node_modules
 !screenshot.jpg
 *.png
 *.svg
+*.mp4
 index.svelte
 /temp
