@@ -35,6 +35,10 @@ An animation project. Topic is "space opera" in the broadest sense, the whole th
 
 A weekly contest hosted at the forum <a href="https://blenderartists.org/c/contests/weekend-challenge/25" target="_blank" rel="noopener noreferrer">blenderartists.org</a>. Nothing to win, the competition is mostly fierce (not me though)!
 
+### IF
+
+IF is an acronym for 'interactive fiction', also known as text adventure. It's a very text-heave computer game genre, and can work well completely without graphics.
+
 ---
 
 ## Anything else?

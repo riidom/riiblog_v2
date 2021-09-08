@@ -35,6 +35,10 @@ Ein Animationsprojekt. Thema ist im weitesten Sinne "Space Opera", das ganze wir
 
 Ein wöchentlicher Wettbewerb, der im Forum <a href="https://blenderartists.org/c/contests/weekend-challenge/25" target="_blank" rel="noopener noreferrer">blenderartists.org</a> abgehalten wird. Zu gewinnen gibt es nichts, die Konkurrenz ist größtenteils furchterregend gut (trifft auf mich nicht zu)!
 
+### IF
+
+IF steht für 'interaktive Fiktion', auch bekannt als Textabenteuer. Eine textlastiges Computerspielgenre, kann auch komplett ohne Grafik auskommen.
+
 ---
 
 ## Sonst noch was?
