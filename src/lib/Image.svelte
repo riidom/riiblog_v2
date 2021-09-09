@@ -5,8 +5,11 @@
         postId: '',
         filename: '',
         alt: '',
-        cap: ''
+        cap: '',
+        ext: ''
     }
+
+    if (!d.ext) { d.ext = '.jpg' }
 
     let active = false
 
@@ -18,14 +21,14 @@
 
 
 <figure>
-    <img src={$P + '/' + d.postId + '/' + d.filename + '-500x200.jpg'}
+    <img src={$P + '/' + d.postId + '/' + d.filename + '-500x200' + d.ext}
         alt={d.alt} class="thumb" on:click={toggleShow}
     >
     <figcaption>{d.cap}</figcaption>
 </figure>
 
 <div class="modal-bg" class:active on:click={toggleShow}>
-    <img src={$P + '/' + d.postId + '/' + d.filename + '.jpg'}
+    <img src={$P + '/' + d.postId + '/' + d.filename + d.ext}
         alt={d.alt} class="fullview" on:click
     >
 </div>
