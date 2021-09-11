@@ -1,14 +1,23 @@
+
+# OS 
 .DS_Store
+.directory
+
+# SvelteKit
 node_modules
 /.svelte-kit
 /package
+
+# Export dir
 /test
 /blog
-.directory
+
+# Media
 *.jpg
 !screenshot.jpg
 *.png
 *.svg
 *.mp4
-index.svelte
+
+# for random stuff
 /temp

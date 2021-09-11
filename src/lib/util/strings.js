@@ -7,6 +7,10 @@ const STR = {
     BtnLangToggle: {
         en: 'auf Deutsch lesen',
         de: 'read in english'
+    },
+    Intro: {
+        en: '',
+        de: ''
     }
 }
 
