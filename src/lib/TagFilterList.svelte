@@ -31,7 +31,7 @@
         <button class="tag"
             on:click={()=>changeFilter(tag, 0)}
         >
-            #{tag}
+            {tag}
         </button>
 
         <button class="icon no {allTagsFilter[tag] === -1 ? 'active' : ''}"
@@ -76,14 +76,19 @@
         outline: none;
         cursor: pointer;
         margin: 0;
-        padding: 0.1rem;
         background: none;
     }
 
     button.tag {
-        margin: 0;
+        padding: 0;
         font-size: 0.75rem;
+        letter-spacing: -.03rem;
         color: var(--tf-tag);
+    }
+
+    button.icon {
+        font-size: 1rem;
+        padding: 0 .2rem;
     }
 
     button.yes {

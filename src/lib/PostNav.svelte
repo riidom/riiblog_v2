@@ -80,7 +80,7 @@
 
             <p class="tags">
                 {#each post.metadata.tags as tag}
-                    <span>#{tag}</span>
+                    <span>{tag}</span>
                 {/each}
             </p>
         {/if}
@@ -145,10 +145,11 @@
     .post {
         display: block;
         margin-bottom: .25rem;
+        line-height: 1rem;
     }
 
     pre {
-        margin: 0 0 .25rem;
+        margin: -.4rem 0 .25rem;
         color: var(--pre);
         font-size: 0.75rem;
     }
@@ -169,6 +170,8 @@
         padding: .1rem .25rem .1rem .15rem;
         border-radius: 6px;
         font-size: .8rem;
+        line-height: .8rem;
+        text-align: center;
         color: var(--tag-text);
     }
 

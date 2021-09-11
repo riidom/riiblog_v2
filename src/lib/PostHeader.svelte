@@ -36,7 +36,7 @@
 
     {#if tags}
         {#each tags as tag}
-            <p class="tag">#{tag}</p>
+            <p class="tag">{tag}</p>
         {/each}
     {/if}
 
