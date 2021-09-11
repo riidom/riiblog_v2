@@ -44,6 +44,8 @@
 
     <a href={$P+'/'}>{STR.BtnHome[LANG]}</a>
 
+    <a href={$P + '/feed.xml'}>RSS</a>
+
 </div>
 
 <hr>

@@ -161,6 +161,9 @@
     }
 
     .tags span {
+        display: block;
+        flex-basis: 0;
+        align-self: baseline;
         background: var(--tag-bg);
         border: 1px solid var(--tag-border);
         padding: .1rem .25rem .1rem .15rem;
