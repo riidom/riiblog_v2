@@ -18,24 +18,27 @@
 </script>
 
 
-<p class="info">Filter:</p>
-<ul class="tags-list">
+<p class="info" id="filter-label">Filter:</p>
+<ul class="tags-list" aria-labelledby="filter-label">
 {#each allTags as tag}
-    <li class="{tag}">
+    <li class="{tag}" role="group">
         <button class="icon yes {allTagsFilter[tag] === 1 ? 'active' : ''}" 
             on:click={()=>changeFilter(tag, 1)}
+            aria-label="filter posts: must have tag {tag}"
         >
             ☑︎
         </button>
 
         <button class="tag"
             on:click={()=>changeFilter(tag, 0)}
+            aria-label="reset filters for tag {tag}"
         >
             {tag}
         </button>
 
         <button class="icon no {allTagsFilter[tag] === -1 ? 'active' : ''}"
             on:click={()=>changeFilter(tag, -1)}
+            aria-label="filter posts: hide all with tag {tag}"
         >
             ☒
         </button>

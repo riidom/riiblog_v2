@@ -10,6 +10,7 @@ tags:
 
 <script>
     import Image from '$lib/Image.svelte'
+    import Link from '$lib/Link.svelte'
 	import PostHeader from '$lib/PostHeader.svelte'
 </script>
 
@@ -33,7 +34,7 @@ Ein Animationsprojekt. Thema ist im weitesten Sinne "Space Opera", das ganze wir
 
 ### Weekend Challenge
 
-Ein wöchentlicher Wettbewerb, der im Forum <a href="https://blenderartists.org/c/contests/weekend-challenge/25" target="_blank" rel="noopener noreferrer">blenderartists.org</a> abgehalten wird. Zu gewinnen gibt es nichts, die Konkurrenz ist größtenteils furchterregend gut (trifft auf mich nicht zu)!
+Ein wöchentlicher Wettbewerb, der im Forum <Link href="https://blenderartists.org/c/contests/weekend-challenge/25">blenderartists.org</Link> abgehalten wird. Zu gewinnen gibt es nichts, die Konkurrenz ist größtenteils furchterregend gut (trifft auf mich nicht zu)!
 
 ### IF
 

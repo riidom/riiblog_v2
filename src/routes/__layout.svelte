@@ -84,9 +84,9 @@
 <PostNav />
 
 <main>
-    <div class="wrapper">
+    <article class="wrapper" aria-live="polite">
         <slot />
-    </div>
+    </article>
 </main>
 
 

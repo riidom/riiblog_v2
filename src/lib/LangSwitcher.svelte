@@ -17,11 +17,13 @@
             LANG = navigator.language.slice(0, 2)
             document.cookie = 'lang=' + LANG + '; path=/'
         }
+        document.documentElement.setAttribute('lang', LANG);
     })
 
     function toggle() {
         LANG === 'en' ? LANG = 'de' : LANG = 'en'
         document.cookie = 'lang=' + LANG + '; path=/'
+        document.documentElement.setAttribute('lang', LANG);
         if (slug === ''){
             window.location.pathname = `${$P}`
         } else {
@@ -33,7 +35,11 @@
 
 
 
-<button on:click={toggle}>{STR.BtnLangToggle[LANG]}</button>
+<button
+    on:click={toggle}
+>
+    {STR.BtnLangToggle[LANG]}
+</button>
 
 
 

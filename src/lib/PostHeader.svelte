@@ -13,8 +13,18 @@
     import LangSwitcher from '$lib/LangSwitcher.svelte'
     
     let LANG
+    let otherLang
+    let otherURL
     beforeUpdate( () => {
         LANG = convertCookie(document.cookie)['lang'] || 'en'
+
+        // for hreflang in <head>
+        otherLang = (LANG === 'en') ? 'de' : 'en'
+        if (otherLang === 'de') {
+            otherURL = window.location.href.replace('/en/', '/de/')
+        } else {
+            otherURL = window.location.href.replace('/de/', '/en/')
+        }
     })
 
     // date and tags are "optional" (home page doesn't have them)
@@ -22,8 +32,13 @@
         date = new Date(date)
         date = date.toLocaleDateString()
     }
+
+    
 </script>
 
+<svelte:head>
+    <link rel="alternate" hreflang={otherLang} href="{otherURL}" />
+</svelte:head>
 
 
 <h1>{title}</h1>
@@ -42,9 +57,9 @@
 
     <LangSwitcher />
 
-    <a href={$P+'/'}>{STR.BtnHome[LANG]}</a>
+    <a href={$P+'/'} tabindex="0">{STR.BtnHome[LANG]}</a>
 
-    <a href={$P + '/feed.xml'}>RSS</a>
+    <a href={$P+'/feed.xml'} tabindex="0">RSS</a>
 
 </div>
 

@@ -61,7 +61,7 @@
 
 
 
-<ul class:hideMenu>
+<ul class:hideMenu role="navigation" aria-live="polite">
 
     <li class="entry taglist">
         <TagFilterList on:filterChanged={updatePostList}/>
@@ -69,29 +69,44 @@
 
     {#each activePosts as post}
     {#if post.metadata.visible}
+
     <li class="entry">
 
         {#if !post.metadata.tags.includes('meta')}
-            <a class="post" href={`${$P}/${post.path}`} on:click={toggleOnMobile}>
-                {post.metadata.title}
-            </a>
-            
-            <pre>{new Date(post.metadata.date).toLocaleDateString()}</pre>
 
-            <p class="tags">
-                {#each post.metadata.tags as tag}
-                    <span>{tag}</span>
-                {/each}
-            </p>
-        {/if}
-
+        <a class="post" href={`${$P}/${post.path}`}
+            on:click={toggleOnMobile} tabindex="0"
+        >
+            {post.metadata.title}
+        </a>
+        <pre>{new Date(post.metadata.date).toLocaleDateString()}</pre>
+        <p class="tags">
+            {#each post.metadata.tags as tag}
+                <span>{tag}</span>
+            {/each}
+        </p>
         <a class="post" href={`${$P}/${post.path}`} on:click={toggleOnMobile}>
             <img src={`${$P}/thumbs/${post.metadata.id}-THUMB.jpg`} alt="">
+        </a>        
+
+        {:else}
+
+        <a class="post" href={`${$P}/${post.path}`} on:click={toggleOnMobile}>
+            <img src={`${$P}/thumbs/${post.metadata.id}-THUMB.jpg`}
+            role="contentinfo"
+            alt="link to sections: about, contact, imprint, privacy policy">
         </a>
 
+        {/if}
+
     </li>
+
     {:else}
-    <p class="unavailable">{post.metadata.title}</p>
+
+    <p class="unavailable" aria-disabled="true">
+        {post.metadata.title}
+    </p>
+
     {/if}
     {/each}
 
