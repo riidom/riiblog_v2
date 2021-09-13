@@ -203,6 +203,7 @@
     :global(#svelte) {
         box-sizing: border-box;
         background: var(--bg);
+        padding-top: 3rem;
     }
 
     :global(hr) {
@@ -237,6 +238,7 @@
     }
 
     :global(a) {
+        font-family: sans-serif;
         color: var(--a);
         text-decoration: none;
     }
@@ -245,17 +247,23 @@
         color: var(--a-hover);
         text-decoration: underline;
     }
+
+    :global(button) {
+        font-family: sans-serif;
+    }
     
     main {
         padding-left: max(1rem, calc((100% - 70ch) / 2));
         padding-right: max(1rem, calc((100% - 70ch) / 2));
         padding-top: 1rem;
         padding-bottom: 1rem;
+        scrollbar-color: #99a #446; /* Firefox */
     }
 
     main::-webkit-scrollbar {
         width: .5rem;
     }
+
 
     main::-webkit-scrollbar-track {
         background: linear-gradient(0deg, 

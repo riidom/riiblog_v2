@@ -41,7 +41,7 @@
         margin-inline-start: 0.5rem;
         margin-inline-end: 0.5rem;
         margin-block-end: 2rem;
-        min-height: 12rem;
+        min-height: 10rem;
     }
 
     figcaption {
@@ -60,7 +60,7 @@
         background-color: #000000e4;
         width: 100vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         cursor: zoom-out;

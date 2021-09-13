@@ -125,9 +125,10 @@
         overflow: auto;
         direction: rtl;
         position: absolute;
-        top: 0;
+        top: 2rem;
         right: 0;
         z-index: 1;
+        scrollbar-color: #a99 #644; /* Firefox */
     }
 
    .entry {
