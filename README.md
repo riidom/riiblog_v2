@@ -1,3 +1,3 @@
-# current state
+**Website live at https://riidom.eu/blog**
 
-![unfinished](screenshot.jpg)
+This repository contains no media files (see *.gitignore* for excluded file types).
