@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>riidom's blog</title>
+    <link>https://riidom.eu/blog</link>
+    <description>personal blog about 3D, Animation, Gamedev, Writing, Science Fiction and Fantasy - almost 100% OC (original content)!</description>
+    <atom:link href="http://riidom.eu/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>renewed blog</title>
+      <pubDate>Sun, 12 Sep 2021 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/020</link>
+      <guid>https://riidom.eu/blog/en/020</guid>
+      <description>Blog renewed, now with Svelte</description>
+    </item> 
+
+    <item>
+      <title>submissions pt.4</title>
+      <pubDate>Sun, 04 Jul 2021 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/019</link>
+      <guid>https://riidom.eu/blog/en/019</guid>
+      <description>Four more art challenge submissions</description>
+    </item>  
+
+    <item>
+      <title>submissions pt.3</title>
+      <pubDate>Sat, 26 Jun 2021 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/018</link>
+      <guid>https://riidom.eu/blog/en/018</guid>
+      <description>Three more art challenge submissions</description>
+    </item>  
+
+    <item>
+      <title>submissions pt.2</title>
+      <pubDate>Fri, 04 Jun 2021 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/017</link>
+      <guid>https://riidom.eu/blog/en/017</guid>
+      <description>Two more art challenge submissions</description>
+    </item>
+    
+    <item>
+      <title>blog revived</title>
+      <pubDate>Wed, 12 May 2021 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/016</link>
+      <guid>https://riidom.eu/blog/en/016</guid>
+      <description>Blog is back, new art challenge, gamedev!</description>
+    </item>
+    
+    <item>
+      <title>a bit of everything</title>
+      <pubDate>Wed, 07 Oct 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/015</link>
+      <guid>https://riidom.eu/blog/en/015</guid>
+      <description>WC, SF2020 and If with Ink!</description>
+    </item>    
+
+    <item>
+      <title>blenderartists weekend challenge - Ray of Death</title>
+      <pubDate>Fri, 02 Oct 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/014</link>
+      <guid>https://riidom.eu/blog/en/014</guid>
+      <description>I punched big holes for this picture!</description>
+    </item>
+    
+    <item>
+      <title>blenderartists weekend challenge - Circle Of Seasons</title>
+      <pubDate>Wed, 23 Sep 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/013</link>
+      <guid>https://riidom.eu/blog/en/013</guid>
+      <description>Bonus - small SF2020 update included</description>
+    </item>
+    
+    <item>
+      <title>blenderartists weekend challenge - paranormal and fragments</title>
+      <pubDate>Sat, 12 Sep 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/012</link>
+      <guid>https://riidom.eu/blog/en/012</guid>
+      <description>Collected two entries for this post!</description>
+    </item>
+    
+    <item>
+      <title>abandoned ships</title>
+      <pubDate>Sun, 06 Sep 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/011</link>
+      <guid>https://riidom.eu/blog/en/011</guid>
+      <description>Showing off the ships I made, and explain why they won't get used!</description>
+    </item>
+    
+    <item>
+      <title>blenderartists weekend challenge: gears</title>
+      <pubDate>Thu, 03 Sep 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/010</link>
+      <guid>https://riidom.eu/blog/en/010</guid>
+      <description>The Weekend Challenge made me go technical with this medieval low-poly elevator from hell!</description>
+    </item>
+    
+    <item>
+      <title>blenderartists weekend challenge: surrealism</title>
+      <pubDate>Sun, 23 Aug 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/009</link>
+      <guid>https://riidom.eu/blog/en/009</guid>
+      <description>Weekend Challenge proves to be fun! As always, doing the themes in lowpoly style!</description>
+    </item>
+    
+    <item>
+      <title>blenderartists weekend challenge: snail</title>
+      <pubDate>Sun, 16 Aug 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/008</link>
+      <guid>https://riidom.eu/blog/en/008</guid>
+      <description>Participating in a fun contest, doing the themes in lowpoly style!</description>
+    </item>
+    
+    <item>
+      <title>colors and light</title>
+      <pubDate>Wed, 15 Jul 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/007</link>
+      <guid>https://riidom.eu/blog/en/007</guid>
+      <description>Getting Materials and Lighting going, showing some preliminary renders, no more editor shots!</description>
+    </item>
+
+    <item>
+      <title>final corridor</title>
+      <pubDate>Sun, 05 Jul 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/006</link>
+      <guid>https://riidom.eu/blog/en/006</guid>
+      <description>Finally happy with my corridor!</description>
+    </item>
+    
+    <item>
+      <title>new modifiers</title>
+      <pubDate>Mon, 23 Mar 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/005</link>
+      <guid>https://riidom.eu/blog/en/005</guid>
+      <description>Not giving up on the spaceship corridors, this time a better modifier stack.</description>
+    </item>
+    
+    <item>
+      <title>cavelike II</title>
+      <pubDate>Sun, 22 Mar 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/004</link>
+      <guid>https://riidom.eu/blog/en/004</guid>
+      <description>Spaceship corridor turned into another cavelike! this time it's more of a mining corridor though.</description>
+    </item>
+    
+    <item>
+      <title>cavelike</title>
+      <pubDate>Sat, 21 Mar 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/003</link>
+      <guid>https://riidom.eu/blog/en/003</guid>
+      <description>Tried to model a spaceship corridor, got a cave in return.</description>
+    </item>
+    
+    <item>
+      <title>cells and gradients</title>
+      <pubDate>Thu, 19 Mar 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/002</link>
+      <guid>https://riidom.eu/blog/en/002</guid>
+      <description>Tried a spaceship corridor - with gradient colors and some cell-style modelling.</description>
+    </item>
+    
+    <item>
+      <title>Station modular</title>
+      <pubDate>Sun, 15 Mar 2020 15:00:00 +0200</pubDate>
+      <link>https://riidom.eu/blog/en/001</link>
+      <guid>https://riidom.eu/blog/en/001</guid>
+      <description>Modelling a spaceship corridor with a modular approach.</description>
+    </item>
+    
+  </channel>
+</rss>

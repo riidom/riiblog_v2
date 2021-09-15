@@ -59,7 +59,9 @@
 
     <a href={$P+'/'} tabindex="0">{STR.BtnHome[LANG]}</a>
 
-    <a href={'https://riidom.eu/blog/feed.xml'} tabindex="0">RSS</a>
+    <a href={'https://riidom.eu/blog/feed.xml'}
+        rel="external" tabindex="0"
+    >RSS</a>
 
 </div>
 
