@@ -149,6 +149,12 @@
         z-index: 1;
         scrollbar-color: #a99 #644; /* Firefox */
     }
+    
+    @media only screen and (max-width: 39.95rem) {
+        ul:not(.hideMenu) {
+            box-shadow: var(--bg) 0 0 50vh 50vh;
+        }
+    }
 
    .entry {
         margin-bottom: 1rem;

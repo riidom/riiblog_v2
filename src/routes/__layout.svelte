@@ -253,6 +253,7 @@
     }
     
     main {
+        overflow-x: hidden;
         padding-left: max(1rem, calc((100% - 70ch) / 2));
         padding-right: max(1rem, calc((100% - 70ch) / 2));
         padding-top: 1rem;
