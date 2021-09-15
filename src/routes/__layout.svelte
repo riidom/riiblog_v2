@@ -195,7 +195,7 @@
     }
 
     :global(body) {
-        background: black;
+        background: var(--bg);
         margin: 0;
         padding: 0;
     }

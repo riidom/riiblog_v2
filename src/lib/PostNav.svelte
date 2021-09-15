@@ -91,10 +91,13 @@
 
         {:else}
 
-        <a class="post" href={`${$P}/${post.path}`} on:click={toggleOnMobile}>
+        <a class="post" href={`${$P}/${post.path}`}
+            on:click={toggleOnMobile} tabindex="0" role="contentinfo"
+            aria-label="about, contact, imprint, privacy policy"
+        >
             <img src={`${$P}/thumbs/${post.metadata.id}-THUMB.jpg`}
-            role="contentinfo"
-            alt="link to sections: about, contact, imprint, privacy policy">
+                role="presentation" alt=""
+            >
         </a>
 
         {/if}
@@ -135,12 +138,13 @@
     ul {
         background: var(--bg);
         max-width: min(23rem, 100%);
-        margin: 0;
         padding: .5rem;
         overflow: auto;
         direction: rtl;
         position: absolute;
         top: 2rem;
+        margin: 0 auto;
+        left: 0;
         right: 0;
         z-index: 1;
         scrollbar-color: #a99 #644; /* Firefox */
