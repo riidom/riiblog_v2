@@ -10,8 +10,8 @@ const config = {
     "extensions": [".svelte", ...mdsvexConfig.extensions],
 
     kit: {
-        adapter: adapter({ pages: 'test' }),
-        paths: { base: '/test' },
+        adapter: adapter({ pages: 'blog' }),
+        paths: { base: '/blog' },
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	},

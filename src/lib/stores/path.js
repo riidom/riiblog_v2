@@ -1,7 +1,7 @@
 
 import { writable } from 'svelte/store'
 
-let path = '/test'
+let path = '/blog'
 
 if (process.env.NODE_ENV === 'development') {
     path = ''
