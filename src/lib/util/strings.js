@@ -9,8 +9,8 @@ const STR = {
         de: 'read in english'
     },
     Intro: {
-        en: '',
-        de: ''
+        en: 'In my blog I write (mostly) about the things jotted down below. Have fun!',
+        de: 'Um die unten aufgeführten Themen geht es (meist) in meinem Blog. Viel Spaß!'
     }
 }
 
