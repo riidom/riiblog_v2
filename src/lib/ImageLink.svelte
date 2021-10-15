@@ -23,6 +23,8 @@
     a {
         display: flex;
         align-items: center;
+        max-width: fit-content;
+        text-decoration: none;
     }
 
     span {
@@ -32,6 +34,10 @@
     img {
         cursor: pointer;
         max-width: 100%;
+    }
+
+    img:hover {
+        filter: drop-shadow(0 0 2px var(--img-hover));
     }
 
 

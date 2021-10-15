@@ -298,6 +298,7 @@
             grid-auto-columns: 2fr 1fr;
             gap: .25rem;
             height: 100vh;
+            padding-top: 0;
         }
 
         :global(h1) { font-size: 3rem; letter-spacing: -.2rem;}

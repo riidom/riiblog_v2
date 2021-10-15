@@ -55,6 +55,10 @@
         max-width: 100%;
     }
 
+    img.thumb:hover {
+        filter: drop-shadow(0 0 2px var(--img-hover));
+    }
+
     .modal-bg {
         display: none;
         background-color: #000000e4;
