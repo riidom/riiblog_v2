@@ -2,11 +2,11 @@
 const STR = {
     BtnHome: {
         en: 'Home',
-        de: 'Startseite'
+        de: '⌂'
     },
     BtnLangToggle: {
-        en: 'auf Deutsch lesen',
-        de: 'read in english'
+        en: 'DE',
+        de: 'EN'
     },
     Intro: {
         en: 'In my blog I write (mostly) about the things jotted down below. Have fun!',

@@ -11,10 +11,13 @@
     let renderTitles = []
     let renderContent = []
     let LANG
+    let introText = ''
 
     beforeUpdate( () => {
 
         LANG = convertCookie(document.cookie)['lang'] || 'en'
+        introText = STR.Intro[LANG]
+
     
         let cards = new Map()
 
@@ -61,9 +64,9 @@
 
 
 
-<PostHeader title={"riidom\'s Blog!"}  date={undefined} tags={undefined}/>
+<PostHeader title={"riidom\'s Blog!"}  date={" "} tags={null}/>
 
-<p>{@html STR.Intro[LANG]}</p>
+<p>{@html introText}</p>
 
 <section>
 {#each [...renderTitles] as title, i}

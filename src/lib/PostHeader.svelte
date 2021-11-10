@@ -28,7 +28,7 @@
     })
 
     // date and tags are "optional" (home page doesn't have them)
-    if (date) {
+    if (date && date !== ' ') {
         date = new Date(date)
         date = date.toLocaleDateString()
     }
@@ -45,23 +45,30 @@
 
 <div class="meta">
 
+    <LangSwitcher />
+
+
+    <a href={$P+'/'} tabindex="0">
+        <img class="svg" src="{$P+'/home-icon.svg'}" alt="Home">
+    </a>
+
+
+    <a href={'https://riidom.eu/blog/feed.xml'}
+        rel="external" tabindex="0"
+    ><img class="svg" src="{$P+'/rss-icon.svg'}" alt="RSS"></a>
+
+
     {#if date}
         <pre class="date">{date}</pre>
     {/if}
 
+    
     {#if tags}
         {#each tags as tag}
             <p class="tag">{tag}</p>
         {/each}
     {/if}
 
-    <LangSwitcher />
-
-    <a href={$P+'/'} tabindex="0">{STR.BtnHome[LANG]}</a>
-
-    <a href={'https://riidom.eu/blog/feed.xml'}
-        rel="external" tabindex="0"
-    >RSS</a>
 
 </div>
 
@@ -75,7 +82,8 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: .5rem;
+        row-gap: .5rem;
+        column-gap: 1.5rem;
         width: 100%;
     }
 
@@ -94,6 +102,10 @@
     .date, .tag {
         font-size: .8rem;
         margin: 0;
+    }
+
+    .svg:hover {
+        filter: brightness(1.25);
     }
 
     hr {

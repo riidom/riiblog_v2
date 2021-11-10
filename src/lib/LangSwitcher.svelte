@@ -38,7 +38,7 @@
 <button
     on:click={toggle}
 >
-    {STR.BtnLangToggle[LANG]}
+    {STR.BtnLangToggle[LANG] ? STR.BtnLangToggle[LANG]: '....'}
 </button>
 
 
