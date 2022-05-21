@@ -1,3 +1,5 @@
-**Website live at https://riidom.eu/blog**
+Website archived at riidom.eu/blog
 
-This repository contains no media files (see *.gitignore* for excluded file types).
+**New blog live at https://riidom.eu/posts** 
+
+*RSS at https://riidom.eu/posts/misc/feed*
